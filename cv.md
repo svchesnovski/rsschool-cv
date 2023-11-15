@@ -42,18 +42,22 @@ export const createType = async (type) => {
 ---
 #### Frontend Developer
 Freelance Remote
+
 Full cycle of website development with JS/TS, React, Redux, Node.js, MobX, Webpack, PostgreSQL, MongoDB, Docker, HTML, CSS, Emotion, REST.
 
 ## Education:
 ---
 #### Innopolis University
+
 (Information Technology)
-Grade: Full Stack JavaScript Developer
-Project management in a team. Full cycle of website development. 
-Programming languages: JavaScript, TypeScript.
-Working with frameworks: Express, React, Redux. 
-Skills: Micro Frontend development. 
+
+Grade: Full Stack JavaScript Developer.    
+Project management in a team. Full cycle of website development.   
+Programming languages: JavaScript, TypeScript.  
+Working with frameworks: Express, React, Redux.   
+Skills: Micro Frontend development.   
 Full-Stack Development JavaScript · TypeScript · React.js · Redux.js · Webpack · Node.js · Jest · Express.js · PostgreSQL · MongoDB
 Testing with Jest and Cypress.
+
 ---
 English Language: B1
