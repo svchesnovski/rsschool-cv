@@ -1,1 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chesnovskiy S — CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
 
+<body>
+
+<header class="header">
+  <div class="header-inner">
+
+    <h1>Svyatoslav Chesnovskiy</h1>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main class="card">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="photo">
+        <img src="assets/photo_1.jpeg" alt="Photo of Svyatoslav Chesnovskiy">
+    </div>
+
+    <h2>Contacts</h2>
+
+     <div class="divider"></div>
+
+    <ul class="contact">
+      <li>Serbia, Belgrade</li>
+      <li><a href="mailto:svyatoslav@example.com">svchesnovski@gmail.com</a></li>
+      <li><a href="https://github.com/svchesnovski" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/svyatoslav-chesnovskiy/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://t.me/svchesnovski/" target="_blank">Telegram</a></li>
+    </ul>
+
+     <div class="divider"></div>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <ul class="skills">
+
+    <li class="skill reveal">
+      <div class="meta">
+        <span>HTML / CSS</span>
+        <span>95%</span>
+      </div>
+      <div class="bar">
+        <i style="width:95%"></i>
+      </div>
+    </li>
+
+    <li class="skill reveal">
+      <div class="meta">
+        <span>JavaScript</span>
+        <span>85%</span>
+      </div>
+      <div class="bar">
+        <i style="width:85%"></i>
+      </div>
+    </li>
+
+    <li class="skill reveal">
+      <div class="meta">
+        <span>React</span>
+        <span>80%</span>
+      </div>
+      <div class="bar">
+        <i style="width:80%"></i>
+      </div>
+    </li>
+
+     <li class="skill reveal">
+      <div class="meta">
+        <span>TypeScript</span>
+        <span>60%</span>
+      </div>
+      <div class="bar">
+        <i style="width:60%"></i>
+      </div>
+
+  </ul>
+</section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <div class="tools">
+      <ul>
+        <li>Git</li>
+        <li>Webpack</li>
+        <li>Vite</li>
+        <li>Figma</li>
+        <li>VS Code</li>
+        <li>Jest</li>
+        <li>ESLint</li>
+        <li>Prettier</li>
+        <li>DevTools</li>
+        <li>Jira</li> 
+        <li>Apache JMeter</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+        <li>Postman</li>
+        <li>Cypress</li>
+        <li>Confluence</li>
+        <li>Agile (SCRUM)</li>
+      </ul>
+       
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+<div class="main">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Frontend developer focused on clean UI, accessibility and modern web technologies.
+            Looking for a junior / middle frontend position. I specialize in full-cycle website development with a focus on modern JavaScript frameworks and collaborative team environments.
+        </p>
+    </section>
+
+     <section class="services">
+
+        <h3>What I'm Doing</h3>
+
+        <div class="services-wrapper">
+
+            <div class="service-card reveal">
+                <div class="icon"><img src="assets/icons8-puzzle.svg" alt="Project Management icon"></div>
+                <div>
+                    <h4>Project Management</h4>
+                    <p>Team collaboration, SCRUM, Agile methodologies, project planning and coordination.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon"><img src="assets/icons8-3d-pointer.svg" alt="Full Cycle Development icon"></div>
+                <div>
+                    <h4>Full Cycle Development</h4>
+                    <p>Complete website development from design to deployment. Working with JavaScript, TypeScript, React, Redux, and Express.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon"><img src="assets/icons8-news.svg" alt="Micro Frontend Architecture icon"></div>
+                <div>
+                    <h4>Micro Frontend Architecture</h4>
+                    <p>Building scalable and modular frontend applications with modern architectural patterns.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="icon"><img src="assets/icons8-picture.svg" alt="Testing & Quality Assurance icon"></div>
+                <div>
+                    <h4>Testing & Quality Assurance</h4>
+                    <p>Automated testing with Jest and Cypress. Ensuring code quality and reliability.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+      <h2>Code Example</h2>
+
+      <pre><code>
+// Let's make a Cat constructor!
+var Cat = (function () {
+  var cats = [],
+      totalWeight = 0;
+
+  function Cat(name, weight) {
+    if (!name || !weight) {
+      throw new Error('Both `name` and `weight` should be provided');
+    }
+    Object.defineProperty(this, 'name', {
+      get: function() { return name; },
+      set: function(value) { name = value; }
+    });
+    Object.defineProperty(this, 'weight', {
+      get: function() { return weight; },
+      set: function(value) {
+        totalWeight = totalWeight - weight + value;
+        weight = value;
+      }
+    });
+    cats.push(this);
+    totalWeight += weight;
+  }
+
+  Cat.averageWeight = function() {
+    return totalWeight / cats.length;
+  };
+
+  return Cat;
+}());
+      </code></pre>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <ul>
+        <li>
+          JS Game - Hangman —
+          <a href="https://rolling-scopes-school.github.io/svchesnovski-JSFE2023Q4/hangman/" target="_blank">Hangman</a>
+        </li>
+        <li>
+          Landing Page —
+          <a href="https://rolling-scopes-school.github.io/svchesnovski-JSFE2023Q4/coffee-house/index.html" target="_blank">Coffee House</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <p>
+        Full Stack JavaScript Developer — Innopolis University
+      </p>
+
+      <p>
+        English level: B2 (Upper-Intermediate)
+      </p>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <a href="https://github.com/svchesnovski" target="_blank">
+        <img src="assets/github-svgrepo-com.svg" alt="GitHub logo" class="GitHub-logo">
+    </a>
+
+    <p style="font-weight: bold">© 2026</p>
+
+    <a href="https://rs.school/courses/short-track" target="_blank">
+      <img src="assets/rs-school-logo.svg" alt="RS School logo" class="rs-logo">
+    </a>
+
+  </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
